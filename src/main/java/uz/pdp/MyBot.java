@@ -24,19 +24,19 @@ public class MyBot extends TelegramLongPollingBot implements TelegramBotUtils{
             SendMessage sendMessage = null;
             switch (text){
                 case "hello":
-                    sendMessage = new SendMessage(chatId, "hello");
+                    sendMessage = new SendMessage(chatId + "", "hello");
                     break;
                 case "hi":
-                    sendMessage = new SendMessage(chatId, "hi");
+                    sendMessage = new SendMessage(chatId + "", "hi");
                     break;
                 case "how are you":
-                    sendMessage = new SendMessage(chatId, "good, you");
+                    sendMessage = new SendMessage(chatId + "", "good, you");
                     break;
                 case "what are you doing":
-                    sendMessage = new SendMessage(chatId, "nothing you");
+                    sendMessage = new SendMessage(chatId + "", "nothing you");
                     break;
                 default:
-                    sendMessage = new SendMessage(chatId, "i dont understand");
+                    sendMessage = new SendMessage(chatId + "", "i dont understand");
                     break;
             }
             try {
